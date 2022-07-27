@@ -1,0 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+
+* {
+    font-family: Montserrat, sans-serif;
+    /* font-size: large; */
+}
+
+/* body {
+    margin: 0px;
+} */
+img {
+    width: 100%;
+    background-size: cover;
+    transform: scale(1);
+    transition: transform 0.5s;
+    margin: 0px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* div {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+} */
