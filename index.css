@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
-    font-family: Montserrat, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
 }
   
 .header-container {
