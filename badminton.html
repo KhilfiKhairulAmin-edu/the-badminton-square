@@ -1,39 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Abouttt Badminton</title>                              
+        <title>About Badminton</title>                              
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="./include.js"></script>
     </head>
     <body>
 
-
-        <!-- HEADER -->
-
-        <ul class="header-container">
-            <div class="header-content">
-                <li><a href="./badminton.html">World Rankings</a></li>
-            </div>
-            <ul class="header-container">
-                <div class="header-content">
-                    <li><a href="./badminton.html">News</a></li>
-                </div>
-                <div class="header-content">
-                    <li><a href="./badminton.html">Explore</a></li>
-                </div>
-                <div class="header-content">
-                    <li><a href="./badminton.html">About</a></li>
-                </div>
-                <div class="header-content icon">
-                    <li><a href="index.html"><img src="./src/icon/badminton.png" alt="One Stop Icon"></a></li>
-                </div>
-            </ul>
-        </ul>
-
-        <!-- /HEADER -->
+        <div w3-include-html="./component/header.html"></div>
 
          <!-- Basic Information of Badminton WorldWide -->
 
@@ -135,6 +113,9 @@
         
         </div>
 
+        <script>
+            includeHTML();
+        </script>
     </body>
 </html>
 
