@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <script src="./include.js"></script>
+        <script src="/initComponent.js"></script>
     </head>
     <body>
 
-        <div w3-include-html="./component/header.html"></div>
+        <div component="/components/header.html"></div>
 
          <!-- Basic Information of Badminton WorldWide -->
 
@@ -86,7 +86,7 @@
             <div class="w3-half">
               <div class="w3-margin-bottom">
               </div>
-              <img src="./src/DSN-1.png">
+              <img src="/images/DSN-1.png">
             </div>
 
             <div class="w3-half w3-container">
@@ -114,7 +114,7 @@
         </div>
 
         <script>
-            includeHTML();
+            initComponent();
         </script>
     </body>
 </html>
