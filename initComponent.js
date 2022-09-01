@@ -26,4 +26,4 @@ function initComponent() {
   }
 }
 
-/* Source: https://www.w3schools.com/HOWTO/howto_html_include.asp */
+/* Sumber Kod: https://www.w3schools.com/HOWTO/howto_html_include.asp */
