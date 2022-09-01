@@ -8,8 +8,9 @@
 }
 
 .icon {
-    width: 60px;
-    margin: 10px;
+    width: 65px;
+    margin-top: 8px;
+    margin-left: 4px;
     z-index: 2;
 }
 
