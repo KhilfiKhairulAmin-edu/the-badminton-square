@@ -3,12 +3,9 @@
 
 body {
     font-family: Montserrat, sans-serif;
+    overflow:visible;
     /* font-size: 16px; */
     /* font-size: large; */
-}
-
-body {
-    padding: 8px;
 }
 
 img {
