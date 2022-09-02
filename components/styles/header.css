@@ -10,9 +10,9 @@
 }
 
 .icon {
-    width: 65px;
-    margin-top: 8px;
-    margin-left: 4px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 12%;
     z-index: 2;
 }
 
@@ -21,22 +21,23 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #e32020;
+  
 
     /* This piece of code is used to make header in fixed position */
     position: fixed;
     top: 0;
     width: 100%;
 }
+
+.header-item {
+    padding-right: 10%;
+}
   
 .header-item li {
 
     float: right;
     padding-top: 35px;
-}
-
-.dropbtn {
-    border-bottom: #e32020 5px solid;
+    padding-left: 4%;
 }
   
 li a, .dropbtn {
