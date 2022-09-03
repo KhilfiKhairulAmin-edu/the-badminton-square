@@ -8,6 +8,7 @@ function openNav() {
     // document.getElementById("main").style.marginLeft = "250px";
     const sidebarComplement = document.getElementById("sidebarComplement");
     sidebarComplement.addEventListener("click", closeNav, true);
+    sidebarComplement.style.zIndex = 0;
 }
 
 /**
@@ -17,6 +18,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     const sidebarComplement = document.getElementById("sidebarComplement");
     sidebarComplement.removeEventListener("click", closeNav);
+    sidebarComplement.style.zIndex = -1;
     // document.getElementById("main").style.marginLeft= "0";
 }
 
