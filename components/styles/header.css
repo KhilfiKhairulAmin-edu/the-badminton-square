@@ -3,6 +3,7 @@
 
 #header {
     font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 
@@ -52,15 +53,16 @@ li a, .dropbtn {
     text-decoration: none;
 }
   
-.header-item li a:hover, .dropdown:hover .dropbtn {
+.header-item li a:hover, .dropdown:hover .dropbtn, .openbtn:hover {
 
-    border-bottom: white 5px solid;
+    color: #e1e1e1;
     
 }
 
 .header-item li div.dropdown-content a:hover {
 
     background-color: #f1f1f1;
+    color: black;
 } 
   
 .header-item li.dropdown {
@@ -76,6 +78,7 @@ li a, .dropbtn {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 8px;
   }
   
 .dropdown-content a {
@@ -89,6 +92,8 @@ li a, .dropbtn {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+    color: black;
+    border-radius: 8px;
 }
   
 .dropdown:hover .dropdown-content {
@@ -110,6 +115,7 @@ li a, .dropbtn {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.401);
 }
   
 .sidebar a {
@@ -122,14 +128,14 @@ li a, .dropbtn {
   }
   
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #e1e1e1;
 }
   
 .sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 30px;
+    font-size: 26px;
 }
   
 .openbtn {
@@ -139,11 +145,12 @@ li a, .dropbtn {
     color: white;
     padding: 10px 15px;
     border: none;
+    border-radius: 10px;
 }
   
-.openbtn:hover {
+/* .openbtn:hover {
     background-color: rgba(68, 68, 68, 0.223);
-}
+} */
   
 #main {
     transition: margin-left .5s;
