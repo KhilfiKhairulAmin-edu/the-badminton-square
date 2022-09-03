@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 body {
-  font-family: 'Montserrat', 'Times New Roman', Times, serif;
-  padding: 0px;
-  margin: 0px;
   background-image:url('/images/Main\ Page\ BG.jpg');
+  background-repeat: no-repeat;
+  background-clip: padding-box;
 }
 
 

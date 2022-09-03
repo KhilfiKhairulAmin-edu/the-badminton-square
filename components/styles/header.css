@@ -1,9 +1,12 @@
+/* Common settings for header page */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 #header {
     font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+/* Styling for header bar */
 .icon-container {
     height: 30px;
 
@@ -37,7 +40,7 @@
 
     float: right;
     padding-top: 35px;
-    padding-left: 4%;
+    /* padding-left: 4%; */
 }
   
 li a, .dropbtn {
@@ -84,9 +87,70 @@ li a, .dropbtn {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
   
 .dropdown:hover .dropdown-content {
     position:fixed;
     display: block;
+}
+
+
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgb(232, 34, 34);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+}
+
+#sidebarComplement {
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
