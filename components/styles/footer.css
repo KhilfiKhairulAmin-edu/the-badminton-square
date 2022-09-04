@@ -4,7 +4,7 @@
 
 .footer-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-grow: 4;
     flex-wrap: wrap;
     background-color: #111;
@@ -29,7 +29,7 @@
 
 .footer-text li {
     padding-top: 16px ;
-    padding-left: 12px;
+    padding-left: 6px;
 }
 
 .icon-footer {
@@ -37,18 +37,23 @@
 }
 
 .github-promotion {
-    border-left: white solid 1px;
-    height: 230px;
+    border-left: rgb(189, 189, 189) solid 1px;
+    height: 240px;
 }
 
 .deployment {
     font-size: larger;
 }
 
-.deployment:hover {
-    background: linear-gradient(to right top, #fffe00, #ffcf00, #ff9e00, #fc6c00, #eb2e12);;
+.deployment {
+    background: linear-gradient(to right top, #fffe00, #ffcf00, #ff9e00, #fc6c00, #eb2e12);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
+}
+
+.github-promotion-text {
+    font-size: medium;
 }
 
 /* .github-star-button {
