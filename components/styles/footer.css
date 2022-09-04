@@ -2,3 +2,59 @@
     font-size: small;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 4;
+    flex-wrap: wrap;
+    background-color: #111;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* .footer-item {
+
+} */
+
+.footer-text {
+    color: white;
+    list-style-type: none;
+}
+
+.footer-text div li a {
+    color: white;
+    padding: 0;
+}
+
+.footer-text li {
+    padding-top: 16px ;
+    padding-left: 12px;
+}
+
+.icon-footer {
+    height: 200px;
+}
+
+.github-promotion {
+    border-left: white solid 1px;
+    height: 230px;
+}
+
+.deployment {
+    font-size: larger;
+}
+
+.deployment:hover {
+    background: linear-gradient(to right top, #fffe00, #ffcf00, #ff9e00, #fc6c00, #eb2e12);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+/* .github-star-button {
+    margin-top: 50px;
+} */
+
+/* .copyright {
+    margin-top: 50px;
+} */
