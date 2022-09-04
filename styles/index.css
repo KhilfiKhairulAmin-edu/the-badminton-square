@@ -2,6 +2,7 @@ body {
   background-image:url('/images/Main\ Page\ BG.jpg');
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: top;
 }
 
 
