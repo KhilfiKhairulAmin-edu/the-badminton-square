@@ -1,24 +1,38 @@
 /* This file is used to store all common utilities that each page of this website will use */
 
 /**
+ * Opens sidebar menu inside the header component
  * @since 2nd September 2022
+ * @author Khilfi
  */
-function openNav() {
+function sidebarOpen() {
     document.getElementById("mySidebar").style.width = "240px";
     // document.getElementById("main").style.marginLeft = "250px";
+
     const sidebarComplement = document.getElementById("sidebarComplement");
-    sidebarComplement.addEventListener("click", closeNav, true);
+
+    // Listens for click event
+    // When click is outside Sidebar component, the component closes
+    sidebarComplement.addEventListener("click", sidebarClose, true);
+
+    // Cover everything outside Sidebar so they will not react with cursor
     sidebarComplement.style.zIndex = 0;
 }
 
 /**
+ * Closes sidebar menu inside the header component
  * @since 2nd September 2022
  */
-function closeNav() {
+function sidebarClose() {
     document.getElementById("mySidebar").style.width = "0";
     const sidebarComplement = document.getElementById("sidebarComplement");
-    sidebarComplement.removeEventListener("click", closeNav);
+
+    // Unlisten for click outside Sidebar 
+    sidebarComplement.removeEventListener("click", sidebarClose);
+
+    // Remove cover from outside Sidebar
     sidebarComplement.style.zIndex = -1;
+
     // document.getElementById("main").style.marginLeft= "0";
 }
 

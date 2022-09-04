@@ -1,7 +1,7 @@
 body {
   background-image:url('/images/Main\ Page\ BG.jpg');
   background-repeat: no-repeat;
-  background-clip: padding-box;
+  background-position-x: center;
 }
 
 
