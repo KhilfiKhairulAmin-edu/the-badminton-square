@@ -25,6 +25,7 @@
 .footer-text div li a {
     color: white;
     padding: 0;
+    text-decoration: none;
 }
 
 .footer-text li {
