@@ -3,7 +3,7 @@
 /**
  * Opens sidebar menu inside the header component
  * @since 2nd September 2022
- * @author Khilfi
+ * @author The Badminton Square Team
  */
 function sidebarOpen() {
     document.getElementById("mySidebar").style.width = "240px";
@@ -22,6 +22,7 @@ function sidebarOpen() {
 /**
  * Closes sidebar menu inside the header component
  * @since 2nd September 2022
+ * @author The Badminton Square Team
  */
 function sidebarClose() {
     document.getElementById("mySidebar").style.width = "0";
