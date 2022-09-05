@@ -6,7 +6,7 @@
  * @author The Badminton Square Team
  */
 function sidebarOpen() {
-    document.getElementById("mySidebar").style.width = "240px";
+    document.getElementById("mySidebar").style.width = "14%";
     // document.getElementById("main").style.marginLeft = "250px";
 
     const sidebarComplement = document.getElementById("sidebarComplement");
