@@ -126,8 +126,8 @@ li a, .dropbtn {
     color: #ffffff;
     display: block;
     transition: 0.3s;
-  }
-  
+}
+
 .sidebar a:hover {
     color: #e1e1e1;
 }
@@ -138,7 +138,7 @@ li a, .dropbtn {
     right: 25px;
     font-size: 26px;
 }
-  
+
 .openbtn {
     font-size: 20px;
     cursor: pointer;

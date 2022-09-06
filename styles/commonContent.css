@@ -1,0 +1,32 @@
+@import url("/styles/common.css");
+
+body {
+    background-image: linear-gradient(to left, #0038ff, #008dff, #00b8ff, #00d797, #67eb12);
+}
+
+/* FOR CONTENT PAGES */
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content {
+    /* Control content box width here --> */ width: 40%;
+    background-color: #111;
+    box-shadow: 0px 8px 16px 0px rgba(91, 91, 91, 0.744);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    border-radius: 20px;
+    font-size: medium;
+    line-height: 170%;
+}
+
+.footer-container {
+    background-color: transparent;
+}
