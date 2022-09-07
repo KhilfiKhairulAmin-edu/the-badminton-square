@@ -5,6 +5,13 @@ body {
   background-position-y: top;
 }
 
+.header-item-container {
+  background-color: transparent;
+}
+
+/* .icon {
+  margin-top: 20px;
+} */
 
 
 
