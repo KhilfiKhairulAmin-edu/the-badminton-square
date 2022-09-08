@@ -6,6 +6,7 @@
     background-color: #111;
     color: white;
     height: 120px; /* Temporary */
+    transition: 0.5s;
 
     /* This piece of code is used to make header in fixed position */
     position: fixed;
@@ -13,12 +14,80 @@
     width: 100%;
 }
 
+.header-item {
+    padding-right: 12%;
+}
+
+.header-item li {
+
+    float: right;
+    padding-top: 40px;
+    /* padding-left: 4%; */
+}
+  
+li a, .dropbtn {
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.header-item li a:hover, .dropdown:hover .dropbtn, .openbtn:hover {
+
+    color: #e1e1e1;
+    
+}
+
+.header-item li div.dropdown-content a:hover {
+
+    background-color: #f1f1f1;
+    color: black;
+} 
+  
+.header-item li.dropdown {
+
+    display: inline-block;
+}
+  
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+.dropdown-content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 8px;
+}
+  
+.dropdown:hover .dropdown-content {
+    position:fixed;
+    display: block;
+}
+
 .preference {
     height: 45%;
     position: fixed;
     width: 0px;
     z-index: 3;
-    top: 20%;
+    top: 150px;
     right: 0;
     background-color: #111;
     overflow-x: hidden;

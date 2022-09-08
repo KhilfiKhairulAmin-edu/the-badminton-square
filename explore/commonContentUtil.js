@@ -60,3 +60,14 @@ function prefSidebarClose () {
     prefSidebar.style.width = "0px";
     // prefSidebar.style.paddingLeft = "10%";
 }
+
+/**
+ * Unhide header content
+ */
+function unhideHeaderContent () {
+  document.getElementById("headerContent").style.top = "0";
+}
+
+function hideHeaderContent () {
+  document.getElementById("headerContent").style.top = "-120px";
+}
