@@ -61,13 +61,69 @@ function prefSidebarClose () {
     // prefSidebar.style.paddingLeft = "10%";
 }
 
+/* This code is used to define the behaviour of header content */
 /**
- * Unhide header content
+ * Save ID of timer to track setTimeout function
+ */
+let timerID = 0;
+let lastTimerID = 0;
+/**
+ * Unhide header content and manage when to hide content again
+ * @author The Badminton Square Team
  */
 function unhideHeaderContent () {
-  document.getElementById("headerContent").style.top = "0";
+
+  const headerContent = document.getElementById("headerContent");
+  headerContent.style.top = "0";
+
+  /* When mouse is hovering over, cancel all hide calls */
+  headerContent.addEventListener("mouseover", () => {
+    let id = timerID;
+    while(id >= lastTimerID) {
+      clearTimeout(id);
+      id--;
+    }
+    lastTimerID = timerID;
+  }, true)
+
+  /* When mouse unhovers, initiates timeout to hide in 1s */
+  headerContent.addEventListener("mouseleave", () => {
+    timerID = setTimeout(() => {
+      hideHeaderContent();
+    }, 1000);
+  }, true)
+
+  /* When no mouse event, initiates timeout to hide in 3s */
+  timerID = setTimeout(() => {
+    hideHeaderContent();
+  }, 3000);
 }
 
+/**
+ * Hide header content
+ * @author The Badminton Square Team
+ */
 function hideHeaderContent () {
+  let wind = window.pageYOffset || document.documentElement.scrollTop
+  if (wind <= 50) {
+    console.log(wind);
+    return
+  }
   document.getElementById("headerContent").style.top = "-120px";
 }
+/* Scroll up/down event */
+/**
+ * Save the current sroll offset
+ */
+let lastScrollTop = 0;
+window.addEventListener("scroll", function(){ 
+    var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop){
+       hideHeaderContent();
+    } else {
+       unhideHeaderContent();
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+ }, false);
+ 
+ /* Time event */
