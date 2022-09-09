@@ -31,6 +31,10 @@
     }
 }
 
+function onLoad (pageTitle) {
+  document.getElementById("pageTitle").innerText = pageTitle;
+}
+
 // function onLoad () {
 //     const prefSidebar = document.getElementById("preferenceSidebar");
 
@@ -90,13 +94,13 @@ function unhideHeaderContent () {
   headerContent.addEventListener("mouseleave", () => {
     timerID = setTimeout(() => {
       hideHeaderContent();
-    }, 1000);
+    }, 500);
   }, true)
 
   /* When no mouse event, initiates timeout to hide in 3s */
   timerID = setTimeout(() => {
     hideHeaderContent();
-  }, 3000);
+  }, 2200);
 }
 
 /**
@@ -105,8 +109,8 @@ function unhideHeaderContent () {
  */
 function hideHeaderContent () {
   let wind = window.pageYOffset || document.documentElement.scrollTop
-  if (wind <= 50) {
-    console.log(wind);
+  if (wind <= 20 ) {
+    // console.log(wind);
     return
   }
   document.getElementById("headerContent").style.top = "-120px";
