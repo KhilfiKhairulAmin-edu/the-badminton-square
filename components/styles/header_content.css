@@ -12,15 +12,28 @@
     z-index: 2;
 }
 
+.tools a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 3px;
+    padding-top: 12px;
+    transition: 0.3s;
+}
+
+.tools a:hover {
+    color: rgb(217, 217, 217);
+}
+
 .header-item-container {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #111;
+    background-color: #C21010;
     color: white;
     height: 97px; /* Temporary */
     transition: 0.5s;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.401);
 
     /* This piece of code is used to make header in fixed position */
     position: fixed;
@@ -66,10 +79,10 @@ li a, .dropbtn {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 272px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 8px;
+    border-radius: 2px;
   }
   
 .dropdown-content a {
@@ -79,35 +92,18 @@ li a, .dropbtn {
     text-decoration: none;
     display: block;
     text-align: left;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: black;
-    border-radius: 8px;
+    /* border-radius: 4px; */
 }
   
 .dropdown:hover .dropdown-content {
     position:fixed;
     display: block;
-}
-
-.preference {
-    height: 45%;
-    position: fixed;
-    width: 0px;
-    z-index: 3;
-    top: 150px;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 20px;
-    padding-right: 20px ;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.401);
-    /* padding-left: 10%; */
 }
 
 #prefComplement {
@@ -116,25 +112,64 @@ li a, .dropbtn {
     box-shadow:none;
 }
 
+.preference {
+    height: 30%;
+    position: fixed;
+    width: 0px;
+    z-index: 3;
+    top: 150px;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-right: 28px ;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.401);
+    overflow: hidden;
+    /* padding-left: 10%; */
+}
+
+
 .preference a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 14px 32px;
     text-decoration: none;
     font-size: larger;
-    color: #ffffff;
+    color: gray;
     display: block;
     transition: 0.3s;
     white-space: nowrap;
+    /* border-left: 2px solid transparent; */
 }
 
 .preference a:hover {
-    color: #e1e1e1;
+    color: #C21010;
+    /* border-left: 2px solid #C21010; */
+}
+
+.preference span.vertical {
+    writing-mode:vertical-lr;
+    text-align: center;
+    font-size: x-large;
+    color:dimgray;
+    height: 29%;
 }
 
 #chapter {
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    width: 220%;
+    width: 240px;
     /* border-right: 3px solid white; */
     /* border-top: 3px solid white; */
     text-align: left;
     border-radius: 1px;
+}
+
+#vertical-text {
+    color: gray;
+    transition: 0.7s;
+}
+
+#vertical-text:hover {
+    color: #C21010;
 }

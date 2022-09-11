@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/components/styles/header_content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div id="header-content">
     <div style="height:100px;"></div>
@@ -6,7 +7,7 @@
         <div class="header-item">
             <a href="/explore/"><img class="icon" src="/images/icon/Badminton Square Icon.png"></a>
             <li class="dropdown">
-                <a href="/eplore/" id="chapter" class="dropbtn">Chapter</a>
+                <a href="/explore/" id="chapter" class="dropbtn">Chapter</a>
                 <div class="dropdown-content">
                     <a href="/explore/history/">Chapter 1</a>
                     <a href="/explore/introduction/">Chapter 2</a>
@@ -15,15 +16,26 @@
                     <a href="/explore/advantage/">Chapter 5</a>
                 </div>
             </li>
-            <li style="margin-left:11%"><a href="/">Home</a></li>
         </div>
+        <li class="tools" style="display: flex; justify-content:flex-start; margin-top: 45px">
+            <a href="/index.html"><i class="fa fa-home" style="font-size:24px;"></i></a>
+            <a href="/search.html"><i class="fa fa-search" style="font-size:24px;"></i></a>
+            <a href="/archives.html"><i class="fa fa-archive" style="font-size:24px;"></i></a>
+        </li>
     </ul>
 
-    <div id="prefComplement" class="preference" onmouseover="prefSidebarOpen()">
+    <div id="prefComplement" class="preference" onmouseover="prefSidebarOpen()"></div>
 
-    </div>
     <div id="preferenceSidebar" class="preference">
-        <a href="javascript:void(0);">Dark Mode</a>
+        <div style="display: flex;">
+            <div><span id="vertical-text" class="vertical"><i class="fa fa-gear" style="font-size:28px;"></i> SETTING</span></div>
+            <div>
+                <a href="javascript:void(0);" onclick="switchMode()"><i id="mode" class="fa fa-sun-o" style="font-size:20px;"></i> Switch Mode</a>
+                <a href="javascript:void(0);" onclick="changeBackground()"><i class="fa fa-image" style="font-size:20px;"></i> Background</a>
+                <a href="javascript:void(0);" onclick="playAudio()"><i class="fa fa-music" style="font-size:20px;"></i> Mood</a>
+                <a href="javascript:void(0);" onclick="printPage()"><i class="fa fa-print" style="font-size:20px;"></i> Print</a>
+            </div>
+        </div>
     </div>
 
 

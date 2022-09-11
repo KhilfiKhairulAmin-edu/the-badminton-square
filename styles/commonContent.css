@@ -10,23 +10,82 @@ body {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 30px;
+    margin-right: 12%;
 }
 
 .content {
     /* Control content box width here --> */ width: 40%;
-    background-color: #111;
-    box-shadow: 0px 8px 16px 0px rgba(91, 91, 91, 0.744);
-    color: white;
+    min-width: 400px;
+    background-color: whitesmoke;
+    /* box-shadow: 0px 8px 16px 0px rgba(91, 91, 91, 0.744); */
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: justify;
+    /* text-align: justify; */
     border-radius: 20px;
-    font-size: medium;
-    line-height: 170%;
 }
 
 .footer-container {
     background-color: transparent;
+}
+
+#title {
+    font-size: 60px;
+    color: #C21010;
+    padding-bottom: 12px;
+}
+
+#chapter-title {
+    color: gray;
+    padding-bottom: 20px;
+    padding-left: 2px;
+}
+
+#content {
+    font-size: medium;
+    color: black;
+    padding-top: 20px;
+}
+
+#content p {
+    line-height: 170%;
+    font-size: 18px;
+}
+
+.navigation {
+    /* background-color: white; */
+    list-style-type: none;
+    /* margin-top: 30px; */
+    padding: 8px 8px 8px 8px;
+    padding-right: 2%;
+    /* border-radius: 4px; */
+    background-color: transparent;
+    height: fit-content;
+    /* border-left: #E64848 solid 3px ; */
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px #C21010;
+    color: transparent;
+}
+
+.navigation:hover, .navigation:hover a {
+    text-shadow: none;
+    transition: 0.5s;
+    color: #C21010;
+}
+
+.navigation label {
+    /* background-color: white; */
+    font-size: medium;
+}
+
+.navigation li {
+    /* background-color: white; */
+    font-size: large;
+}
+
+.navigation a {
+    /* background-color: white; */
+    color: transparent;
+    padding-left: 0;
 }
