@@ -87,7 +87,9 @@ function unhideHeaderContent () {
 
   /* When mouse unhovers, initiates timeout to hide in 1s */
   headerContent.addEventListener("mouseleave", () => {
-    hideHeaderContent()
+    timerID = setTimeout(() => {
+      hideHeaderContent();
+    }, 250);
   }, true)
 
   /* When no mouse event, initiates timeout to hide in 3s */

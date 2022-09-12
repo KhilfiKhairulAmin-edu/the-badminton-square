@@ -10,12 +10,12 @@ body {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 30px;
-    margin-right: 12%;
+    /* margin-right: 12%; */
 }
 
 .content {
     /* Control content box width here --> */ width: 40%;
-    min-width: 400px;
+    min-width: 600px;
     background-color: whitesmoke;
     /* box-shadow: 0px 8px 16px 0px rgba(91, 91, 91, 0.744); */
     padding-left: 50px;
@@ -24,6 +24,11 @@ body {
     padding-bottom: 30px;
     /* text-align: justify; */
     border-radius: 20px;
+}
+
+.content img {
+    width: 40%;
+    min-width: 600px;
 }
 
 .footer-container {
@@ -40,6 +45,15 @@ body {
     color: gray;
     padding-bottom: 20px;
     padding-left: 2px;
+}
+
+.caption {
+    color: gray;
+    font-size: medium !important;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 40px !important;
+    margin-top: 10px !important;
 }
 
 #content {
@@ -66,6 +80,7 @@ body {
     transition: 0.5s;
     text-shadow: 2px 2px 2px #C21010;
     color: transparent;
+    position: absolute;
 }
 
 .navigation:hover, .navigation:hover a {
