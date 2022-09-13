@@ -128,7 +128,7 @@ li a, .dropbtn {
 .sidebar a {
     padding: 8px 8px 8px 28px;
     text-decoration: none;
-    font-size: medium;
+    font-size: large;
     color: black;
     display: block;
     transition: 0.3s;
