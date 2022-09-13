@@ -37,6 +37,7 @@ function prefSidebarOpen () {
     // prefSidebar.style.backgroundColor = "#111";
     prefSidebar.style.width = "12%";
     prefSidebar.style.minWidth = "200px"
+    prefSidebar.style.minHeight = "140px"
     document.getElementById("vertical-text").style.color = "#C21010";
 
     prefSidebar.addEventListener("mouseleave", prefSidebarClose, false)
@@ -47,6 +48,7 @@ function prefSidebarClose () {
     // prefSidebar.style.backgroundColor = "transparent";
     prefSidebar.style.width = "0px";
     prefSidebar.style.minWidth = "0px";
+    prefSidebar.style.minHeight = "0px"
     document.getElementById("vertical-text").style.color = "gray";
     // prefSidebar.style.paddingLeft = "10%";
 }
@@ -181,15 +183,15 @@ function getGradientColour (bgId) {
 
   switch (bgId) {
     case "1": {
-      col = "linear-gradient(to left, #ff9c7a, #ff9f6b, #ffa45b, #ffaa49, #ffb135, #ffba2a, #ffc31b, #ffcc00, #ffd800, #ffe500, #fff100, #fffe00)";
+      col = "linear-gradient(to right, #ff9c7a, #ff9f6b, #ffa45b, #ffaa49, #ffb135, #ffba2a, #ffc31b, #ffcc00, #ffd800, #ffe500, #fff100, #fffe00)";
       break;
     }
     case "2": {
-      col = "linear-gradient(to left, #ff007a, #f10092, #d800ae, #ad00cd, #5d12eb)";
+      col = "linear-gradient(to right, #ff007a, #f10092, #d800ae, #ad00cd, #5d12eb)";
       break;
     }
     default: {
-      col = "linear-gradient(to left, #0038ff, #008dff, #00b8ff, #00d797, #67eb12)";
+      col = "linear-gradient(to right, #0038ff, #008dff, #00b8ff, #00d797, #67eb12)";
       break;
     }
   }
@@ -226,6 +228,7 @@ function darkMode () {
   const contentContainer = document.getElementById("contents");
   const bg = document.getElementById("bg");
   const mode = document.getElementById("mode")
+  const nav = document.getElementById("navigation")
   contentContainer.style.backgroundColor = "#171717"
   content.style.color = "whitesmoke"
   bg.style.backgroundImage = "linear-gradient(to right bottom, #141414, #171717, #1a1a1a, #1c1c1c, #1f1f1f, #212121, #242424, #262626, #282828, #2a2a2a, #2c2c2c, #2e2e2e)"
@@ -237,6 +240,7 @@ function lightMode () {
   const contentContainer = document.getElementById("contents");
   const bg = document.getElementById("bg");
   const mode = document.getElementById("mode")
+  const nav = document.getElementById("navigation")
   contentContainer.style.backgroundColor = "whitesmoke"
   content.style.color = "black"
   bg.style.backgroundImage = getGradientColour(localStorage.getItem("bg"));
@@ -248,4 +252,9 @@ let audio = new Audio("/sound/jazz.mp3");
 function playAudio () {
   play ? audio.pause() : audio.play();
   play = !play;
+}
+
+function toTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

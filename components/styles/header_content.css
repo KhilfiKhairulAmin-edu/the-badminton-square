@@ -117,6 +117,7 @@ li a, .dropbtn {
     position: fixed;
     width: 0px;
     min-width: 0px;
+    min-height: 0px;
     z-index: 3;
     top: 150px;
     right: 0;
