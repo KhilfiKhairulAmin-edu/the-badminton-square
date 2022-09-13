@@ -73,18 +73,18 @@ body {
     list-style-type: none;
     /* margin-top: 30px; */
     padding: 8px 8px 8px 8px;
-    padding-right: 2%;
+
     /* border-radius: 4px; */
     background-color: transparent;
     height: fit-content;
     /* border-left: #E64848 solid 3px ; */
     transition: 0.5s;
     /* text-shadow: 2px 2px 2px #C21010; */
-    color: #C21010;
+    color: black;
     position: absolute;
 }
 
-.navigation:hover, .navigation:hover a {
+.navigation a:hover {
     /* text-shadow: none; */
     transition: 0.5s;
     color: #C21010;
@@ -93,6 +93,7 @@ body {
 .navigation label {
     /* background-color: white; */
     font-size: medium;
+    padding-bottom: 10px;
 }
 
 .navigation li {
@@ -102,6 +103,38 @@ body {
 
 .navigation a {
     /* background-color: white; */
-    color: #C21010;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 0;
+    color: black;
     padding-left: 0;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    bottom: 100%;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 4;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
