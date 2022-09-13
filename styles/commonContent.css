@@ -16,6 +16,7 @@ body {
 .content {
     /* Control content box width here --> */ width: 40%;
     min-width: 600px;
+    min-height: 940px;
     background-color: whitesmoke;
     /* box-shadow: 0px 8px 16px 0px rgba(91, 91, 91, 0.744); */
     padding-left: 50px;
@@ -89,15 +90,15 @@ body {
     color: #e3e3e3;
 }
 
-.navigation li:hover {
+.navigation li:hover, #active {
     /* text-shadow: none; */
     border-left: 1px dashed white;
 }
 
-.navigation label {
+.navigation div {
     /* background-color: white; */
     font-size: medium;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .navigation li {
@@ -107,9 +108,8 @@ body {
 
 .navigation a {
     /* background-color: white; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-top: 14px;
+    margin-left: 12px;
     padding: 0;
     padding-left: 0;
     color: whitesmoke;
