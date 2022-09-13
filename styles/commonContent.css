@@ -27,8 +27,8 @@ body {
 }
 
 .content img {
-    width: 40%;
-    min-width: 600px;
+    width: 100%;
+    /* min-width: 600px; */
 }
 
 .footer-container {
@@ -50,8 +50,8 @@ body {
 .caption {
     color: gray;
     font-size: medium !important;
-    text-align: center;
-    width: 600px;
+    text-align: center !important;
+    width: 100%;
     margin-bottom: 40px !important;
     margin-top: 10px !important;
 }
@@ -65,6 +65,7 @@ body {
 #content p {
     line-height: 170%;
     font-size: 18px;
+    text-align: left;
 }
 
 .navigation {
@@ -78,13 +79,13 @@ body {
     height: fit-content;
     /* border-left: #E64848 solid 3px ; */
     transition: 0.5s;
-    text-shadow: 2px 2px 2px #C21010;
-    color: transparent;
+    /* text-shadow: 2px 2px 2px #C21010; */
+    color: #C21010;
     position: absolute;
 }
 
 .navigation:hover, .navigation:hover a {
-    text-shadow: none;
+    /* text-shadow: none; */
     transition: 0.5s;
     color: #C21010;
 }
@@ -101,6 +102,6 @@ body {
 
 .navigation a {
     /* background-color: white; */
-    color: transparent;
+    color: #C21010;
     padding-left: 0;
 }
