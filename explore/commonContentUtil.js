@@ -36,6 +36,7 @@ function prefSidebarOpen () {
     // prefSidebar.style.paddingLeft = "0";
     // prefSidebar.style.backgroundColor = "#111";
     prefSidebar.style.width = "12%";
+    prefSidebar.style.minWidth = "200px"
     document.getElementById("vertical-text").style.color = "#C21010";
 
     prefSidebar.addEventListener("mouseleave", prefSidebarClose, false)
@@ -45,6 +46,7 @@ function prefSidebarClose () {
     const prefSidebar = document.getElementById("preferenceSidebar");
     // prefSidebar.style.backgroundColor = "transparent";
     prefSidebar.style.width = "0px";
+    prefSidebar.style.minWidth = "0px";
     document.getElementById("vertical-text").style.color = "gray";
     // prefSidebar.style.paddingLeft = "10%";
 }
