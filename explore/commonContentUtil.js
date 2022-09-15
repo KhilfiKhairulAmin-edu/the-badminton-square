@@ -108,10 +108,6 @@ function unhideHeaderContent () {
  */
 function hideHeaderContent () {
   let wind = window.pageYOffset || document.documentElement.scrollTop;
-  if (wind <= 20 ) {
-    // console.log(wind);
-    return
-  }
   document.getElementById("headerContent").style.top = "-120px";
 }
 /* Scroll up/down event */

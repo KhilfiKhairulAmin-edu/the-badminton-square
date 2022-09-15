@@ -29,6 +29,7 @@ body {
 
 .content img {
     width: 100%;
+    border-radius: 20px;
     /* min-width: 600px; */
 }
 
@@ -66,7 +67,7 @@ body {
 #content p {
     line-height: 170%;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
 }
 
 .navigation {
