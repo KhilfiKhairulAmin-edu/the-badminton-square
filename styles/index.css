@@ -53,5 +53,7 @@ body {
   display: flex;
   background-color: black;
   height: 1000px;
+  justify-content: center;
   color: whitesmoke;
+  padding-bottom: 10%;
 }
