@@ -22,6 +22,11 @@
     list-style-type: none;
 }
 
+.footer-text div li:hover a:hover {
+    transition: 0.2s;
+    color: rgb(219, 219, 219);
+}
+
 .footer-text div li a {
     color: white;
     padding: 0;

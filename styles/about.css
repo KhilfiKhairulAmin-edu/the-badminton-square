@@ -1,0 +1,30 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about {
+    font-size: larger;
+    color: gray;
+    text-align: justify;
+    display: flex;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.logo {
+    width: 30%;
+}
+
+.about img {
+    border-radius: 20px;
+    margin-right: 20px;
+    
+}
