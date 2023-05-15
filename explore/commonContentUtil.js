@@ -243,11 +243,29 @@ function lightMode () {
   mode.className = "fa fa-sun-o";
 }
 
-let play = false;
-let audio = new Audio("/sound/jazz.mp3");
+const playtime = sessionStorage.getItem('playtime')
+let isPlaying = false
+const audio = new Audio("/sound/jazz.mp3");
+
+navigator.mediaDevices.getUserMedia()
+
+if (playtime) {
+  audio.currentTime = playtime
+  playAudio()
+}
+
+// Function to handle the beforeunload event
+function handleBeforeUnload() {
+  // Set the value in sessionStorage
+  sessionStorage.setItem('playtime', audio.currentTime);
+}
+
+// Attach the event listener
+window.addEventListener('beforeunload', handleBeforeUnload);
+
 function playAudio () {
-  play ? audio.pause() : audio.play();
-  play = !play;
+  isPlaying ? audio.pause() : audio.play();
+  isPlaying = !isPlaying;
 }
 
 function toTop() {
